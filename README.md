@@ -1,10 +1,6 @@
-Absolutely! Here's your **README.md template rewritten for the GitHub User Search App challenge**, based on your shared HTML, Stylus, and JavaScript code.
-
----
-
 # Frontend Mentor - GitHub User Search App Solution
 
-This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-CurE4qGq6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ---
 
@@ -55,7 +51,7 @@ Users should be able to:
 
 ### Links
 
-* **Live Site URL**: [Live Site](https://your-live-site-url.com)
+* **Live Site URL**: [Live Site](https://yashi-singh-9.github.io/GitHub-User-Search-App/)
 
 ---
 
