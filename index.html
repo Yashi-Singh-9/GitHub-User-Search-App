@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    
+    <title>GitHub User Search App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>devfinder</h1>
+            <button id="theme-switcher">
+                Dark
+                <img src="images/icon-moon.svg" alt="">
+            </button>
+        </header>
+
+        <main>
+            <section class="search-info">
+                <img src="images/icon-search.svg" alt="" class="icon">
+                <div class="input-info">
+                    <input type="text" name="search" id="search" placeholder="Search Github Username..." autocomplete="off">
+                    <button type="submit">Search</button>
+                </div>
+            </section>
+
+            <section class="github-info">
+                <img src="images/image-user-placeholder.png" alt="" class="user-image">
+
+                <div class="user-info">
+                    <div class="user-top">
+                        <h2 class="name"></h2>
+                        <span class="joined"></span>
+                    </div>                    
+                    <span class="username"></span>
+                    <p class="user-bio" id="user-bio"></p>
+                    <ul class="user-stats">
+                        <li>
+                          <h4 class="user-stat-title">Repos</h4>
+                          <h2 class="user-stat-value" id="user-repos"></h2>
+                        </li>
+                        <li>
+                          <h4 class="user-stat-title">Followers</h4>
+                          <h2 class="user-stat-value" id="user-followers"></h2>
+                        </li>
+                        <li>
+                          <h4 class="user-stat-title">Following</h4>
+                          <h2 class="user-stat-value" id="user-following"></h2>
+                        </li>
+                    </ul>
+
+                    <section class="user-links">
+                        <div class="user-link-container" id="user-location">
+                            <img src="images/icon-location.svg" alt="">
+                            <a class="user-link" target="_blank" rel="noreferrer"></a>
+                        </div>
+                        <div class="user-link-container " id="user-twitter">
+                            <img src="images/icon-twitter.svg" alt="">
+                          <a class="user-link" target="_blank" rel="noreferrer"></a>
+                        </div>
+                        <div class="user-link-container " id="user-website">
+                            <img src="images/icon-website.svg" alt="">
+                          <a class="user-link" target="_blank" rel="noreferrer"></a>
+                        </div>
+                        <div class="user-link-container " id="user-organization">
+                            <img src="images/icon-company.svg" alt="">
+                          <a class="user-link" target="_blank" rel="noreferrer"></a>
+                        </div>
+                      </section>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

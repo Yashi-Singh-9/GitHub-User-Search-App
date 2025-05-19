@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #f6f8ff;
+}
+[data-theme="light"] body {
+  background-color: #141d2f;
+}
+[data-theme="light"] .container header h1 {
+  color: #fff;
+}
+[data-theme="light"] .container header #theme-switcher {
+  color: #fff;
+}
+[data-theme="light"] .container main .search-info {
+  background-color: #1e2a47;
+  box-shadow: none;
+}
+[data-theme="light"] .container main .search-info input {
+  background-color: #1e2a47;
+  color: #fff;
+}
+[data-theme="light"] .container main .search-info input::placeholder {
+  color: #fff;
+}
+[data-theme="light"] .container main .search-info button {
+  background-color: #0079ff;
+  color: #fff;
+}
+[data-theme="light"] .container main .search-info button:hover {
+  background-color: #1a86ff;
+}
+[data-theme="light"] .container main .github-info {
+  background-color: #1e2a47;
+}
+[data-theme="light"] .container main .github-info .user-image {
+  border: 2px solid #fff;
+}
+[data-theme="light"] .container main .github-info .user-info .user-top h2 {
+  color: #fff;
+}
+[data-theme="light"] .container main .github-info .user-info .user-top .joined {
+  color: #fff;
+}
+[data-theme="light"] .container main .github-info .user-info .username {
+  color: #0079ff;
+}
+[data-theme="light"] .container main .github-info .user-info .user-bio {
+  color: #fff;
+}
+[data-theme="light"] .container main .github-info .user-info .user-stats {
+  background-color: #141d2f;
+}
+[data-theme="light"] .container main .github-info .user-info .user-stats li .user-stat-title {
+  color: #fff;
+}
+[data-theme="light"] .container main .github-info .user-info .user-stats li .user-stat-value {
+  color: #fff;
+}
+[data-theme="light"] .container main .github-info .user-info .user-links .user-link-container a,
+[data-theme="light"] .container main .github-info .user-info .user-links .user-link-container a:visited {
+  color: #fff !important;
+}
+.container {
+  max-width: 750px;
+  width: 95%;
+  margin: 6rem auto;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.container header h1 {
+  color: #2b3442;
+}
+.container header #theme-switcher {
+  padding: 0.4rem;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: inherit;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #4e5d74;
+  font-weight: 700;
+}
+.container main .search-info {
+  padding: 1rem;
+  background-color: #fefefe;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8px 8px #ced9ff;
+  margin-bottom: 2rem;
+}
+.container main .search-info .icon {
+  margin: auto 1rem;
+}
+@media (max-width: 430px) {
+  .container main .search-info .icon {
+    display: none;
+  }
+}
+.container main .search-info .input-info {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 430px) {
+  .container main .search-info .input-info {
+    flex-direction: column;
+  }
+}
+.container main .search-info .input-info input {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: #2b3442;
+  font-size: 1.125rem;
+  width: 100%;
+}
+.container main .search-info .input-info input::placeholder {
+  color: #4b6a9b;
+}
+.container main .search-info .input-info button {
+  cursor: pointer;
+  padding: 13px 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0079ff;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 1.125rem;
+  color: #fff;
+  transition: 0.2s ease;
+}
+.container main .search-info .input-info button:hover {
+  background-color: #1a86ff;
+}
+.container main .github-info {
+  padding: 1.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 8px #ced9ff;
+  display: flex;
+  align-items: flex-start;
+  background-color: #fefefe;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.container main .github-info .user-image {
+  border-radius: 50%;
+  height: 117px;
+  width: 117px;
+}
+.container main .github-info .user-info {
+  flex-grow: 1;
+}
+.container main .github-info .user-info .user-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.container main .github-info .user-info .user-top h2 {
+  color: #2b3442;
+  font-size: 2.2rem;
+}
+.container main .github-info .user-info .user-top .joined {
+  color: #697c9a;
+  font-size: 1rem;
+}
+.container main .github-info .user-info .username {
+  color: #0079ff;
+  display: block;
+  margin-bottom: 2rem;
+}
+.container main .github-info .user-info .user-bio {
+  color: #4b6a9b;
+  margin: 20px 0 32px 0;
+}
+.container main .github-info .user-info .user-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f6f8ff;
+  padding: 16px 32px;
+  border-radius: 10px;
+  margin-bottom: 36px;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.container main .github-info .user-info .user-stats li .user-stat-title {
+  color: #4b6a9b;
+  font-weight: 400;
+}
+.container main .github-info .user-info .user-stats li .user-stat-value {
+  color: #2b3442;
+}
+.container main .github-info .user-info .user-links {
+  display: grid;
+  justify-content: space-between;
+  align-items: flex-start;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 18px;
+  row-gap: 18px;
+}
+@media (max-width: 430px) {
+  .container main .github-info .user-info .user-links {
+    grid-template-columns: 1fr;
+  }
+}
+.container main .github-info .user-info .user-links .user-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.container main .github-info .user-info .user-links .user-link-container img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+.container main .github-info .user-info .user-links .user-link-container a,
+.container main .github-info .user-info .user-links .user-link-container a:visited {
+  color: #2b3442 !important;
+}
